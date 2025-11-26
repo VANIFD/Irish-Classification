@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Data Visualization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Iris Predictor</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Predict</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/visualization">Data Visualization</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="card shadow p-4 mb-4">
+        <h2>Petal Length vs Petal Width</h2>
+        {{ plot_petal | safe }}
+    </div>
+    <div class="card shadow p-4 mb-4">
+        <h2>Sepal Length vs Sepal Width</h2>
+        {{ plot_sepal | safe }}
+    </div>
+</div>
+</body>
+</html>
